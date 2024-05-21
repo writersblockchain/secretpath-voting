@@ -231,12 +231,15 @@ function CreateProposal() {
 
     const gasFee = await provider.getGasPrice();
     let amountOfGas;
+
+    let my_gas = 150000; 
     if (chainId === "4202") {
       amountOfGas = gasFee.mul(callbackGasLimit).mul(100000).div(2);
     } 
 
     if (chainId === "128123") {
-      amountOfGas = gasFee.mul(callbackGasLimit).mul(300).div(2);
+      amountOfGas = gasFee.mul(callbackGasLimit).mul(1000).div(2);
+      my_gas = 15000000;
     }
     
     else {
@@ -244,7 +247,7 @@ function CreateProposal() {
     }
 
     const tx_params = {
-      gas: hexlify(150000),
+      gas: hexlify(my_gas),
       to: publicClientAddress,
       from: myAddress,
       value: hexlify(amountOfGas),

@@ -259,13 +259,16 @@ export default function VoteOnProposal({ myAddress, setMyAddress }) {
       _info,
     ]);
 
+
+
     const gasFee = await provider.getGasPrice();
     let amountOfGas;
     if (chainId === "4202") {
       amountOfGas = gasFee.mul(callbackGasLimit).mul(100000).div(2);
     }
     if (chainId === "128123") {
-      amountOfGas = gasFee.mul(callbackGasLimit).mul(100000).div(2);
+      amountOfGas = gasFee.mul(callbackGasLimit).mul(300).div(2);
+ 
     } 
     else {
       amountOfGas = gasFee.mul(callbackGasLimit).mul(3).div(2);

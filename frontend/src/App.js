@@ -12,7 +12,7 @@ const ethersConfig = defaultConfig({
   metadata,
 
   /*Optional*/
-  // enableEIP6963: true, // true by default
+  enableEIP6963: true, // true by default
   enableInjected: true, // true by default
   enableCoinbase: true, // true by default
   rpcUrl: "...", // used for the Coinbase SDK

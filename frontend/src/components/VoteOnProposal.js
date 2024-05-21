@@ -263,7 +263,11 @@ export default function VoteOnProposal({ myAddress, setMyAddress }) {
     let amountOfGas;
     if (chainId === "4202") {
       amountOfGas = gasFee.mul(callbackGasLimit).mul(100000).div(2);
-    } else {
+    }
+    if (chainId === "128123") {
+      amountOfGas = gasFee.mul(callbackGasLimit).mul(100000).div(2);
+    } 
+    else {
       amountOfGas = gasFee.mul(callbackGasLimit).mul(3).div(2);
     }
 

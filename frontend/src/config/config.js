@@ -77,7 +77,7 @@ export const mainnets = {
   },
   XDCMainnet: {
     chainId: 50,
-    name: "XinFin Network Mainnet",
+    name: "XDC Mainnet",
     currency: "XDC",
     explorerUrl: "https://explorer.xinfin.network/",
     rpcUrl: "https://rpc.xinfin.network",

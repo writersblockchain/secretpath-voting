@@ -75,6 +75,9 @@ createWeb3Modal({
 
     //Lisk Sepolia
     4202: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRan6D0dfiYmx2sv4kUPsFkfUDxYUWEuuA_dLJWgPm8Q&s",
+
+     // Fhenix Testnet
+     42069: "https://media.licdn.com/dms/image/D4D0BAQFtUjFKqv_DJA/company-logo_200_200/0/1695715998703/fhenix_logo?e=2147483647&v=beta&t=U2cvAqKuWeEqE5Cb4HgyuBmVTUcBuZvsDi0JdivU3nw",
   },
   ethersConfig,
   chains: [
@@ -88,6 +91,8 @@ createWeb3Modal({
     mainnets.lineaMainnet,
     mainnets.scrollMainnet,
     mainnets.metisMainnet,
+    mainnets.XDCMainnet,
+    mainnets.NearAuroraMainnet,
     testnets.sepoliaTestnet,
     testnets.scrollTestnet,
     testnets.polygonTestnet,
@@ -101,6 +106,7 @@ createWeb3Modal({
     testnets.lineaSepoliaTestnet,
     testnets.XDCApothemTestnet,
     testnets.liskSepoliaTestnet,
+    testnets.FhenixTestnet,
   ],
   projectId,
   enableAnalytics: true, // Optional - defaults to your Cloud configuration

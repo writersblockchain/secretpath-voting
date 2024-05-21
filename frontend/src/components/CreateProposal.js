@@ -236,8 +236,8 @@ function CreateProposal() {
     } 
 
     if (chainId === "128123") {
-      amountOfGas = gasFee.mul(callbackGasLimit).mul(100000).div(2);
-    } 
+      amountOfGas = gasFee.mul(callbackGasLimit).mul(300).div(2);
+    }
     
     else {
       amountOfGas = gasFee.mul(callbackGasLimit).mul(3).div(2);

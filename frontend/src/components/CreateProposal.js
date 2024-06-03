@@ -168,6 +168,9 @@ function CreateProposal() {
     if (chainId === "4202") {
       publicClientAddress = testnet.publicClientAddressLiskSepoliaTestnet;
     }
+    if (chainId === "1802203764") {
+      publicClientAddress = testnet.publicClientAddressKakarotTestnet
+    }
 
     const callbackAddress = publicClientAddress.toLowerCase();
     console.log("callback address: ", callbackAddress);

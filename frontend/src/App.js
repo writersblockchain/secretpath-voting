@@ -20,7 +20,7 @@ const ethersConfig = defaultConfig({
 });
 
 createWeb3Modal({
-  chainImages: {
+  chainImages:  {
     // Arbitrum Mainnet
     42161: "https://arbiscan.io/images/svg/brands/arbitrum.svg?v=1.5",
     // Linea Mainnet
@@ -40,6 +40,14 @@ createWeb3Modal({
 
      //Mainnetz Mainnet
      2016: "https://assets.coingecko.com/coins/images/33947/large/zcM8MEO5_400x400.png?1703537595",
+
+      //Core Mainnet
+      1116: "https://scan.test.btcs.network/images/icon.png",
+
+       //Mantle Mainnet
+     5000: "https://www.mantle.xyz/logo-light.svg",
+
+
 
     //Sepolia Testnet
     11155111:
@@ -96,6 +104,13 @@ createWeb3Modal({
 
        // Fhenix Testnet
        8008135: "https://media.licdn.com/dms/image/D4D0BAQFtUjFKqv_DJA/company-logo_200_200/0/1695715998703/fhenix_logo?e=2147483647&v=beta&t=U2cvAqKuWeEqE5Cb4HgyuBmVTUcBuZvsDi0JdivU3nw",
+
+          //Core Testnet
+      1115: "https://scan.test.btcs.network/images/icon.png",
+
+      //Mantle Testnet
+    5003: "https://www.mantle.xyz/logo-light.svg",
+
 },
 ethersConfig,
 chains: [
@@ -115,6 +130,8 @@ chains: [
   mainnets.MainnetzMainnet,
   mainnets.MoonriverMainnet,
   mainnets.MoonbeamMainnet,
+  mainnets.CoreMainnet,
+  mainnets.MantleMainnet,
   testnets.sepoliaTestnet,
   testnets.scrollTestnet,
   testnets.polygonTestnet,
@@ -132,6 +149,8 @@ chains: [
   testnets.MainnetzTestnet,
   testnets.MoonbaseAlphaTestnet,
   testnets.FhenixTestnet,
+  testnets.CoreTestnet,
+  testnets.MantleTestnet
 ],
 projectId,
 enableAnalytics: true, // Optional - defaults to your Cloud configuration

@@ -1,10 +1,9 @@
-// config.js
+
 
 // 1. Export Project ID
 export const projectId = "6e58f7c259de8fd44a4b237465fe9956";
 
 // Mainnet configurations
-
 export const mainnets = {
   ethereumMainnet: {
     chainId: 1,
@@ -118,6 +117,20 @@ export const mainnets = {
     currency: "GLMR",
     explorerUrl: "https://moonbeam.moonscan.io",
     rpcUrl: "https://rpc.api.moonbeam.network",
+  },
+  CoreMainnet: {
+    chainId: 1116,
+    name: "Core Blockchain Mainnet",
+    currency: "CORE",
+    explorerUrl: "https://scan.coredao.org",
+    rpcUrl: "https://rpc.coredao.org/",
+  },
+MantleMainnet: {
+    chainId: 5000,
+    name: "Mantle Mainnet",
+    currency: "MNT",
+    explorerUrl: "https://explorer.mantle.xyz",
+    rpcUrl: "https://rpc.mantle.xyz",
   }
 };
 // Testnet configurations
@@ -241,7 +254,23 @@ export const testnets = {
     explorerUrl: "https://explorer.helium.fhenix.zone",
     rpcUrl: "https://api.helium.fhenix.zone/",
   },
+  CoreTestnet: {
+    chainId: 1115,
+    name: "Core Blockchain Testnet",
+    currency: "tCORE",
+    explorerUrl: "https://scan.test.btcs.network",
+    rpcUrl: "https://rpc.test.btcs.network",
+  },
+  MantleTestnet: {
+    chainId: 5003,
+    name: "Mantle Sepolia",
+    currency: "tETH",
+    explorerUrl: "https://5003.testnet.routescan.io",
+    rpcUrl: "https://rpc.sepolia.mantle.xyz",
+  },
 };
+
+
 
 
 // 4. Metadata Object

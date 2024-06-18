@@ -320,6 +320,11 @@ export default function VoteOnProposal({ myAddress, setMyAddress }) {
       amountOfGas = gasFee.mul(callbackGasLimit).mul(1000).div(2);
       my_gas = 15000000;
     }
+
+    if (chainId === "5003") {
+      amountOfGas = gasFee.mul(callbackGasLimit).mul(1000000).div(2);
+      my_gas = 1500000000;
+    }
     
     else {
       amountOfGas = gasFee.mul(callbackGasLimit).mul(3).div(2);

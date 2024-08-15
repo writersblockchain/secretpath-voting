@@ -121,7 +121,7 @@ export default function VoteOnProposal({ myAddress, setMyAddress }) {
 
     console.log(data);
 
-    let publicClientAddress;
+    let publicClientAddress
 
     if (chainId === "1") {
       publicClientAddress = mainnet.publicClientAddressEthereumMainnet
@@ -185,6 +185,9 @@ export default function VoteOnProposal({ myAddress, setMyAddress }) {
     }
     if (chainId === "100") {
       publicClientAddress = mainnet.publicClientAddressGnosisMainnet
+    }
+    if (chainId === "25") {
+      publicClientAddress = mainnet.publicClientAddressCronosMainnet
     }
 
     if (chainId === "11155111") {
@@ -255,6 +258,10 @@ export default function VoteOnProposal({ myAddress, setMyAddress }) {
     if (chainId === "44433") {
       publicClientAddress = testnet.publicClientAddressUbitTestnet
     }
+    if (chainId === "338") {
+      publicClientAddress = testnet.publicClientAddressCronosTestnet
+    }
+
 
     const callbackAddress = publicClientAddress.toLowerCase();
     console.log("callback address: ", callbackAddress);

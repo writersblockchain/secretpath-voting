@@ -36,7 +36,7 @@ createWeb3Modal({
         50: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe2KDAtPElT99WYln7tyeQPlPCiBWaRfRA_guAL0HImJWBcRympM_r5VBSiOR29zFpKIU&usqp=CAU",
 
         // Lisk Mainnet
-        1135: "https://pbs.twimg.com/profile_images/1610268745682849796/pjuC1Y85_400x400.jpg",
+        1135: "https://avatars.githubusercontent.com/u/16600915?s=280&v=4",
 
         //Mainnetz Mainnet
         2016: "https://assets.coingecko.com/coins/images/33947/large/zcM8MEO5_400x400.png?1703537595",
@@ -49,6 +49,9 @@ createWeb3Modal({
 
         //Sei Mainnet
         1329: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFGvgacXR_ZJo61dPkc3xNs1enVpq0v64vGg&s",
+
+          //Cronos Mainnet
+     25: "https://cryptologos.cc/logos/cronos-cro-logo.svg?v=032",
    
        //Sepolia Testnet
        11155111:
@@ -92,7 +95,7 @@ createWeb3Modal({
        51: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe2KDAtPElT99WYln7tyeQPlPCiBWaRfRA_guAL0HImJWBcRympM_r5VBSiOR29zFpKIU&usqp=CAU",
    
        //Lisk Sepolia
-       4202: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRan6D0dfiYmx2sv4kUPsFkfUDxYUWEuuA_dLJWgPm8Q&s",
+       4202: "https://cryptologos.cc/logos/lisk-lsk-logo.png?v=032",
 
         // Kakarot Testnet
         1802203764: "https://assets-global.website-files.com/6464a063474b57e2c4e03b61/64a20e2749d92613acf4fd1b_Logo%20dark.svg",
@@ -121,6 +124,9 @@ createWeb3Modal({
        //Ubit Testnet
        44433: "https://cdn.dorahacks.io/static/files/190a27e11a44bf8cd0c07094264b1b85.png@256h.webp",
 
+        //Cronos Testnet
+    338: "https://cryptologos.cc/logos/cronos-cro-logo.svg?v=032",
+
   },
   ethersConfig,
   chains: [
@@ -144,6 +150,7 @@ createWeb3Modal({
     mainnets.MantleMainnet,
     mainnets.SeiMainnet,
     mainnets.GnosisMainnet,
+    mainnets.CronosMainnet,
     
     testnets.sepoliaTestnet,
     testnets.scrollTestnet,
@@ -167,6 +174,7 @@ createWeb3Modal({
     testnets.GnosisChiadoTestnet,
     testnets.SeiTestnet,
     testnets.UbitTestnet,
+    testnets.CronosTestnet,
   ],
   projectId,
   enableAnalytics: true, // Optional - defaults to your Cloud configuration

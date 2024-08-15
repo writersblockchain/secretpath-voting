@@ -91,7 +91,8 @@ function CreateProposal() {
       end_time: minutes,
     });
 
-    let publicClientAddress;
+    let publicClientAddress
+
     if (chainId === "1") {
       publicClientAddress = mainnet.publicClientAddressEthereumMainnet
     }
@@ -154,6 +155,9 @@ function CreateProposal() {
     }
     if (chainId === "100") {
       publicClientAddress = mainnet.publicClientAddressGnosisMainnet
+    }
+    if (chainId === "25") {
+      publicClientAddress = mainnet.publicClientAddressCronosMainnet
     }
 
     if (chainId === "11155111") {
@@ -224,6 +228,10 @@ function CreateProposal() {
     if (chainId === "44433") {
       publicClientAddress = testnet.publicClientAddressUbitTestnet
     }
+    if (chainId === "338") {
+      publicClientAddress = testnet.publicClientAddressCronosTestnet
+    }
+
 
     const callbackAddress = publicClientAddress.toLowerCase();
     console.log("callback address: ", callbackAddress);

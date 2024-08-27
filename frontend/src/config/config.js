@@ -2,6 +2,7 @@
 
 // 1. Export Project ID
 export const projectId = "6e58f7c259de8fd44a4b237465fe9956";
+
 // Mainnet configurations
 export const mainnets = {
   ethereumMainnet: {
@@ -151,6 +152,20 @@ GnosisMainnet: {
     currency: "CRO",
     explorerUrl: "https://cronoscan.com",
     rpcUrl: "https://evm-cronos.crypto.org",
+  },
+  CronosZkEVMMainnet: {
+    chainId: 388,
+    name: "Cronos zkEVM",
+    currency: "zkCRO",
+    explorerUrl: "https://explorer.zkevm.cronos.org",
+    rpcUrl: "https://mainnet.zkevm.cronos.org",
+  },
+  ZKsyncEraMainnet: {
+    chainId: 324,
+    name: "Cronos Mainnet",
+    currency: "ETH",
+    explorerUrl: "https://explorer.zksync.io",
+    rpcUrl: "https://mainnet.era.zksync.io",
   },
 
 };
@@ -317,8 +332,20 @@ export const testnets = {
     explorerUrl: "https://explorer.cronos.org/testnet",
     rpcUrl: "https://evm-t3.cronos.org",
   },
-
-
+  CronosZkEvmTestnet: {
+    chainId: 282,
+    name: "Cronos zkEVM Testnet",
+    currency: "zkTCRO",
+    explorerUrl: "https://explorer.zkevm.cronos.org/testnet",
+    rpcUrl: "https://testnet.zkevm.cronos.org",
+  },
+  ZksyncEraSepoliaTestnet: {
+    chainId: 300,
+    name: "ZKsync Sepolia Testnet",
+    currency: "ETH",
+    explorerUrl: "https://sepolia.explorer.zksync.io",
+    rpcUrl: "https://sepolia.era.zksync.dev",
+  },
 };
 
 

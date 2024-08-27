@@ -7,6 +7,7 @@ import Navigation from "./components/Navigation";
 import VoteOnProposal from "./components/VoteOnProposal";
 import { projectId, testnets, mainnets, metadata } from "./config/config";
 import MyImage from "./poweredby.png";
+
 const ethersConfig = defaultConfig({
   /*Required*/
   metadata,
@@ -17,7 +18,7 @@ const ethersConfig = defaultConfig({
   enableCoinbase: true, // true by default
   rpcUrl: "...", // used for the Coinbase SDK
   defaultChainId: 1, // used for the Coinbase SDK
-});
+})
 
 createWeb3Modal({
   chainImages: {
@@ -52,6 +53,12 @@ createWeb3Modal({
 
           //Cronos Mainnet
      25: "https://cryptologos.cc/logos/cronos-cro-logo.svg?v=032",
+
+          // Cronos Zk Mainnet
+          388: "https://docs.cronos.org/~gitbook/image?url=https%3A%2F%2F1786307500-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FqXsIo4b4WtOTfICyOIxa%252Ficon%252FjttFGLyNrcsRyiavSGOl%252FCGzQIEVX_400x400.png%3Falt%3Dmedia%26token%3D9955a6fa-7d27-48a0-bc9d-534e107668d8&width=32&dpr=2&quality=100&sign=3cf5e6d3&sv=1",
+
+          // Zksync Era Mainnet
+          324: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAOVBMVEVHcEzz8/Py8vLy8vLy8vL29vbi4uKCgoI/Pz9aWlr6+vrZ2dlnZ2cAAACioqKbm5sjIyO7u7vx8fEHp9RtAAAAE3RSTlMATtH9///////////////////NLBPW6gAAALRJREFUeAGN0wUSAyEQBEBscf//Y5M5auNQmZKTxkUIqbT5Ea3k3cw2Uqg9KqG3prUwh/yH9PxHH0jW0cOcpSfCfIiMMXgoI6VcQiTkwhISMcKKrw1JF5YMBcI4jEvFq/WBdkbHO1oWxgY2fJNpnb+AeX30dhdKz6IWzS7tA0MYnS0neg4I80ytvBpPhRGpftnCq2WgIYoUY4C9Ll/YLt9+4c9bts8Z9d706WjO86HeXocpxQ06RxKNJbAEDwAAAABJRU5ErkJggg==",
    
        //Sepolia Testnet
        11155111:
@@ -127,6 +134,14 @@ createWeb3Modal({
         //Cronos Testnet
     338: "https://cryptologos.cc/logos/cronos-cro-logo.svg?v=032",
 
+       // Cronos Zk Testnet
+       282: "https://docs.cronos.org/~gitbook/image?url=https%3A%2F%2F1786307500-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FqXsIo4b4WtOTfICyOIxa%252Ficon%252FjttFGLyNrcsRyiavSGOl%252FCGzQIEVX_400x400.png%3Falt%3Dmedia%26token%3D9955a6fa-7d27-48a0-bc9d-534e107668d8&width=32&dpr=2&quality=100&sign=3cf5e6d3&sv=1",
+ 
+       // Zksync Era Sepolia
+        300: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAOVBMVEVHcEzz8/Py8vLy8vLy8vL29vbi4uKCgoI/Pz9aWlr6+vrZ2dlnZ2cAAACioqKbm5sjIyO7u7vx8fEHp9RtAAAAE3RSTlMATtH9///////////////////NLBPW6gAAALRJREFUeAGN0wUSAyEQBEBscf//Y5M5auNQmZKTxkUIqbT5Ea3k3cw2Uqg9KqG3prUwh/yH9PxHH0jW0cOcpSfCfIiMMXgoI6VcQiTkwhISMcKKrw1JF5YMBcI4jEvFq/WBdkbHO1oWxgY2fJNpnb+AeX30dhdKz6IWzS7tA0MYnS0neg4I80ytvBpPhRGpftnCq2WgIYoUY4C9Ll/YLt9+4c9bts8Z9d706WjO86HeXocpxQ06RxKNJbAEDwAAAABJRU5ErkJggg=="
+
+
+
   },
   ethersConfig,
   chains: [
@@ -151,6 +166,8 @@ createWeb3Modal({
     mainnets.SeiMainnet,
     mainnets.GnosisMainnet,
     mainnets.CronosMainnet,
+    mainnets.CronosZkEVMMainnet,
+    mainnets.ZKsyncEraMainnet,
     
     testnets.sepoliaTestnet,
     testnets.scrollTestnet,
@@ -175,6 +192,8 @@ createWeb3Modal({
     testnets.SeiTestnet,
     testnets.UbitTestnet,
     testnets.CronosTestnet,
+    testnets.CronosZkEvmTestnet,
+    testnets.ZksyncEraSepoliaTestnet
   ],
   projectId,
   enableAnalytics: true, // Optional - defaults to your Cloud configuration

@@ -343,9 +343,13 @@ export default function VoteOnProposal({ myAddress, setMyAddress }) {
 
 
 
-    const gasFee = await provider.getGasPrice();
+    const feeData = await provider.getFeeData();
+    const maxFeePerGas = feeData.maxFeePerGas;
+    const maxPriorityFeePerGas = feeData.maxPriorityFeePerGas;
+    const gasFee = (maxFeePerGas && maxPriorityFeePerGas) ? maxFeePerGas.add(maxPriorityFeePerGas) : await provider.getGasPrice()
     let amountOfGas;
-    let my_gas = 150000; 
+   let my_gas = 150000;
+
     if (chainId === "4202") {
       amountOfGas = gasFee.mul(callbackGasLimit).mul(100000).div(2);
     } 
@@ -369,10 +373,16 @@ export default function VoteOnProposal({ myAddress, setMyAddress }) {
       amountOfGas = gasFee.mul(callbackGasLimit).mul(1000000).div(2);
       my_gas = 1500000000;
     }
-    
+
+    if (chainId === "80002") {
+      amountOfGas = gasFee.mul(callbackGasLimit).mul(100).div(2);
+      my_gas = 200000;
+    }
+
     else {
       amountOfGas = gasFee.mul(callbackGasLimit).mul(3).div(2);
     }
+
 
     const tx_params = {
       gas: hexlify(my_gas),

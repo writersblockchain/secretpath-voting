@@ -19,7 +19,7 @@
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
     "react-spinners": "^0.13.8",
-    "secretjs": "^1.12.5",
+    "secretjs": "^1.15.0-beta.1",
     "secure-random": "^1.1.2",
     "web-vitals": "^2.1.4"
   },
